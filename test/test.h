@@ -8,12 +8,16 @@ namespace qstd
   class TestPrivate;
   class Test
   {
-    Q_DECLARE_PRIVATE(TestPrivate)
   public:
     Test();
     ~Test();
 
+  public:
+    bool Create();
+
   private:
+    TestPrivate *d_ptr;
+    Q_DECLARE_PRIVATE(Test);
   };
 
 } // namespace qstd
