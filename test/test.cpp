@@ -14,7 +14,7 @@ namespace qstd
   bool Test::Create()
   {
 #if 1
-    Q_D(Test);
+    Q_D(Test)
     d->Init();
 #else
     d_func()->Init();

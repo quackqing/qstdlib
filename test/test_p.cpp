@@ -16,7 +16,7 @@ namespace qstd
   void TestPrivate::Init()
   {
 #if 1
-    Q_Q(Test);
+    Q_Q(Test)
     q->Create();
 #else
     q_func()->Create();

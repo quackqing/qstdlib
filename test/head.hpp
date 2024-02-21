@@ -23,8 +23,8 @@ namespace qstd
     inline const Class *q_func() const { return static_cast<const Class *>(q_ptr); } \
     friend class Class;
 
-#define Q_D(Class) Class##Private *const d = d_func()
-#define Q_Q(Class) Class *const q = q_func()
+#define Q_D(Class) Class##Private *const d = d_func();
+#define Q_Q(Class) Class *const q = q_func();
 
 }
 
